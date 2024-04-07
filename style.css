@@ -2,4 +2,65 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: monospace, 'Courier New', Courier;
+}
+
+tr {
+    border-bottom: 1px solid black!important;
+}
+
+th:not(:last-child), td:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+th, td {
+    vertical-align: top;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.table {
+    width: 100%;
+    font-size: 1.5rem;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table__heading {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: left;
+    font-size: 3rem;
+}
+
+.add-border {
+    border-right: 1px solid black;
+}
+
+.hash-mark {
+    border: none!important;
+    padding-left: 0;
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 10px;
+    }
 }
